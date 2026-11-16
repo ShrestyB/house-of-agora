@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>House of Agora — Every Artwork Has a Story</title>
+  <meta name="description" content="Affordable original art from independent artists. Every piece comes with the story behind it." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#/" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>HOUSE OF <b>AGORA</b></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#/artworks" data-nav="artworks">Artworks</a></li>
+        <li><a href="#/stories" data-nav="stories">Stories</a></li>
+        <li><a href="#/artists" data-nav="artists">Artists</a></li>
+        <li><a href="#/about" data-nav="about">About Us</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#/artworks" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+        </a>
+        <a href="#/wishlist" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+          <span class="badge" id="wish-count" hidden>0</span>
+        </a>
+        <a href="#/cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg>
+          <span class="badge" id="cart-count" hidden>0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="logo footer-logo"><span class="logo-mark"></span><span>HOUSE OF <b>AGORA</b></span></div>
+        <p>Original, human-made art at honest prices. Every piece arrives with the story of how — and why — it was made.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#/artworks">All Artworks</a>
+        <a href="#/artworks?price=0-2000">Under ₹2,000</a>
+        <a href="#/stories">Stories</a>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <a href="#/artists">Our Artists</a>
+        <a href="#/about">About Us</a>
+        <a href="#/about">Sell With Us</a>
+      </div>
+      <div>
+        <h4>Promise</h4>
+        <p>100% original · Artist gets the largest share · Free shipping in India</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 House of Agora. All artworks are originals by the artists listed.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
